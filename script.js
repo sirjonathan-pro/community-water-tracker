@@ -415,3 +415,17 @@ document.getElementById("reportSearch")
 
 document.getElementById("statusFilter")
     .addEventListener("change", displayFilteredReports);
+
+// REGISTER SERVICE WORKER
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(function() {
+        console.log("Application service worker registered!");
+      })
+      .catch(function(error) {
+        console.error("Service worker registration failed:", error);
+      });
+  });
+}
+

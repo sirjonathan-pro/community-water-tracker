@@ -1,0 +1,22 @@
+
+{
+  "name": "Community Water Tracker",
+  "short_name": "Water Tracker",
+  "description": "Community Water Fault Reporting and Tracking System",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#087f8c",
+  "icons": [
+    {
+      "src": "./water-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
+
+
